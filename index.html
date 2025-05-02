@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layouts and Responsive Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <h1 id="main-heading">Welcome to My Portfolio</h1>
+            <p id="intro-text">This page demonstrates DOM manipulation with JavaScript</p>
+        </header>
+
+        <section class="skills-section" id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Networking</h3>
+                    <p>Expertise in network infrastructure, security, and protocols.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Web Design</h3>
+                    <p>Creating beautiful, responsive websites with modern technologies.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Mobile App Development</h3>
+                    <p>Building cross-platform mobile applications for iOS and Android.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <button id="style-changer">Change Theme</button>
+            <button id="toggle-element">Toggle Special Message</button>
+            <div id="special-message" class="hidden">
+                <p>This is a dynamically shown/hidden message!</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; <span id="year">2023</span> My Portfolio</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
